@@ -21,7 +21,7 @@ func main() {
 	}
 
 	if fileOut, err = os.Create(sdk.FileOutPath); err != nil {
-		sdk.PrintError(err.Error(), "Файл с данными точно существует?")
+		sdk.PrintError(err.Error(), "Файлs с данными точно существует?")
 		sdk.Exit()
 	}
 
