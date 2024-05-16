@@ -66,29 +66,29 @@ func setParam(comands []string) {
 
 		if len(cS) > 1 {
 			switch cS[0] {
-			case "FileInPath":
+			case "fileInPath":
 				fallthrough
 			case "fip":
 				FileInPath = cS[1]
 
-			case "FileOutPath":
+			case "fileOutPath":
 				fallthrough
 			case "fop":
 				FileOutPath = cS[1]
 
-			case "PatternData":
+			case "patternData":
 				fallthrough
 			case "pd":
 				PatternData = cS[1]
 
-			case "Sep":
+			case "sep":
 				fallthrough
 			case "s":
 				PatternData = cS[1]
 
-			case "CountOrders":
+			case "countOrders":
 				fallthrough
-			case "mwb":
+			case "co":
 				cSS, err := strconv.Atoi(cS[1])
 				if err != nil {
 					PrintError("Кажется вы ввели не число.")
